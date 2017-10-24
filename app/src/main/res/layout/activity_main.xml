@@ -4,6 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context="adapter.android.dominando.mobileprojetoctb.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logo_marca" />
+
+    <EditText
+        android:id="@+id/loginID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Login"
+        android:textSize="24sp"
+        tools:ignore="LabelFor"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/loginID"
+        android:layout_below="@+id/loginID"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/senha"
+        android:textSize="24sp"
+        tools:ignore="LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btnLogarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/passwordID"
+        android:layout_below="@+id/passwordID"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/acessar" />
+
+    <ImageView
+        android:id="@+id/imgLoginID"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logotipoID"
+        android:layout_alignTop="@+id/loginID"
+        android:layout_marginEnd="15dp"
+        app:srcCompat="@drawable/login_dois"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgSenhaID"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passwordID"
+        android:layout_alignStart="@+id/imgLoginID"
+        app:srcCompat="@drawable/login_um"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>
