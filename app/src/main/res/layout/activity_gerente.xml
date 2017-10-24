@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="adapter.android.dominando.mobileprojetoctb.GerenteActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgSolicitacaoID"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="71dp"
+        app:srcCompat="@drawable/lista_solicitacao"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgCadastroMotID"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imgSolicitacaoID"
+        android:layout_marginEnd="49dp"
+        android:layout_toStartOf="@+id/imgSolicitacaoID"
+        app:srcCompat="@drawable/cadastro_motorista"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtCadastroMotID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastroMotorista"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/imgCadastroMotID"
+        android:layout_alignStart="@+id/imgCadastroMotID" />
+
+    <TextView
+        android:id="@+id/txtSolicitacaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solicitacao"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/imgSolicitacaoID"
+        android:layout_alignStart="@+id/imgCadastrarPostID" />
+
+    <ImageView
+        android:id="@+id/imgCadastrarCarID"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/cadastrar_carro"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/txtCadastroMotID"
+        android:layout_alignStart="@+id/imgCadastroMotID" />
+
+    <ImageView
+        android:id="@+id/imgCadastrarPostID"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/cadastrar_posto"
+        android:layout_alignTop="@+id/imgCadastrarCarID"
+        android:layout_alignEnd="@+id/imgSolicitacaoID"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtCadastrarCarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrarCarro"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/imgCadastrarCarID"
+        android:layout_alignStart="@+id/imgCadastrarCarID" />
+
+    <TextView
+        android:id="@+id/txtCadastrarPostID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrarPosto"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/imgCadastrarCarID"
+        android:layout_toEndOf="@+id/imgCadastroMotID" />
+
+</RelativeLayout>
