@@ -32,10 +32,11 @@
         android:id="@+id/txtCadastroMotID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cadastroMotorista"
-        android:textColor="@android:color/black"
+        android:layout_alignStart="@+id/imgCadastroMotID"
         android:layout_below="@+id/imgCadastroMotID"
-        android:layout_alignStart="@+id/imgCadastroMotID" />
+        android:text="@string/cadastroMotorista"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/txtSolicitacaoID"
@@ -43,7 +44,7 @@
         android:layout_height="wrap_content"
         android:text="@string/solicitacao"
         android:textColor="@android:color/black"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="23dp"
         android:layout_below="@+id/imgSolicitacaoID"
         android:layout_alignStart="@+id/imgCadastrarPostID" />
 
@@ -71,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cadastrarCarro"
+        android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:layout_below="@+id/imgCadastrarCarID"
         android:layout_alignStart="@+id/imgCadastrarCarID" />
