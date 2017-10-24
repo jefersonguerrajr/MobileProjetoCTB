@@ -8,11 +8,12 @@
     tools:context="adapter.android.dominando.mobileprojetoctb.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgLogoMarcaID"
         android:layout_width="350dp"
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:paddingLeft="30dp"
         app:srcCompat="@drawable/logo_marca" />
 
     <EditText
@@ -25,7 +26,7 @@
         android:textSize="24sp"
         tools:ignore="LabelFor"
         android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/imageView3" />
+        android:layout_alignEnd="@+id/imgLogoMarcaID" />
 
     <EditText
         android:id="@+id/passwordID"
@@ -54,11 +55,11 @@
         android:id="@+id/imgLoginID"
         android:layout_width="35dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/logotipoID"
-        android:layout_alignTop="@+id/loginID"
-        android:layout_marginEnd="15dp"
         app:srcCompat="@drawable/login_dois"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/passwordID"
+        android:layout_toStartOf="@+id/loginID"
+        android:layout_marginEnd="10dp" />
 
     <ImageView
         android:id="@+id/imgSenhaID"
