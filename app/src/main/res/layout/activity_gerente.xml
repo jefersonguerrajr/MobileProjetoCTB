@@ -61,9 +61,9 @@
         android:id="@+id/imgCadastrarPostID"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        app:srcCompat="@drawable/cadastrar_posto"
-        android:layout_alignTop="@+id/imgCadastrarCarID"
         android:layout_alignEnd="@+id/imgSolicitacaoID"
+        android:layout_alignTop="@+id/imgCadastrarCarID"
+        app:srcCompat="@drawable/cadastrar_osto"
         tools:ignore="ContentDescription" />
 
     <TextView
