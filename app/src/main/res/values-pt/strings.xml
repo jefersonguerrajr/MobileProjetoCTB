@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MobileProjetoCTB</string>
+    <string name="Login">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="acessar">Acessar</string>
+    <string name="cadastroMotorista">Cadastro De Motorista</string>
+    <string name="solicitacao">Solicitação</string>
+    <string name="cadastrarPosto">Cadastrar posto de gasolina</string>
+    <string name="cadastrarCarro">Cadastrar novo carro</string>
+</resources>

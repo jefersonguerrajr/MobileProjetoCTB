@@ -11,6 +11,8 @@
         android:id="@+id/imgLogoMarcaID"
         android:layout_width="350dp"
         android:layout_height="200dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
         android:paddingLeft="30dp"
         app:srcCompat="@drawable/logo_marca"
         tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
@@ -27,32 +29,31 @@
         android:text="@string/Login"
         android:textSize="24sp"
         tools:ignore="LabelFor"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/imgLogoMarcaID"
         android:layout_toEndOf="@+id/imgLoginID" />
 
     <EditText
         android:id="@+id/passwordID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/loginID"
-        android:layout_below="@+id/loginID"
-        android:layout_marginTop="65dp"
         android:ems="10"
         android:inputType="numberPassword"
         android:text="@string/senha"
         android:textSize="24sp"
 
-        tools:ignore="LabelFor,TextFields" />
+        tools:ignore="LabelFor,TextFields"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/loginID"
+        android:layout_toEndOf="@+id/imgSenhaID" />
 
     <Button
         android:id="@+id/btnLogarID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/passwordID"
         android:layout_below="@+id/passwordID"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/acessar" />
+        android:text="@string/acessar"
+        android:layout_alignEnd="@+id/passwordID"
+        android:layout_toEndOf="@+id/imgSenhaID" />
 
     <ImageView
         android:id="@+id/imgLoginID"

@@ -10,23 +10,23 @@
         android:id="@+id/imgSolicitacaoID"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="76dp"
         app:srcCompat="@drawable/lista_solicitacao"
         android:contentDescription=""
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgCadastrarCarID"
+        android:layout_marginStart="37dp" />
 
     <ImageView
         android:id="@+id/imgCadastroMotID"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignTop="@+id/imgSolicitacaoID"
-        android:layout_marginEnd="49dp"
-        android:layout_toStartOf="@+id/imgSolicitacaoID"
         app:srcCompat="@drawable/cadastro_motorista"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/imgSolicitacaoID"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp" />
 
     <TextView
         android:id="@+id/txtCadastroMotID"

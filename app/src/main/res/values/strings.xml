@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">MobileProjetoCTB</string>
     <string name="Login">Login</string>
-    <string name="senha">Senha</string>
-    <string name="acessar">Acessar</string>
-    <string name="cadastroMotorista">Cadastrar Motorista</string>
-    <string name="solicitacao">Solicitação</string>
-    <string name="cadastrarPosto">Cadastrar Posto</string>
-    <string name="cadastrarCarro">Cadastrar Carro</string>
+    <string name="senha">Password</string>
+    <string name="acessar">Access</string>
+    <string name="cadastroMotorista">Insert Driver</string>
+    <string name="solicitacao">Request</string>
+    <string name="cadastrarPosto">Insert Gas Station</string>
+    <string name="cadastrarCarro">Insert Car</string>
 </resources>
