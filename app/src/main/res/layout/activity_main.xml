@@ -1,77 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/background_light"
-    tools:context="adapter.android.dominando.mobileprojetoctb.MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/imgLogoMarcaID"
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false"
-        android:paddingLeft="30dp"
-        app:srcCompat="@drawable/logo_marca"
-        tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        tools:context="adapter.android.dominando.mobileprojetoctb.MainActivity">
 
-    <EditText
-        android:id="@+id/loginID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Login"
-        android:textSize="24sp"
-        tools:ignore="LabelFor"
-        android:layout_below="@+id/imgLogoMarcaID"
-        android:layout_toEndOf="@+id/imgLoginID" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
 
-    <EditText
-        android:id="@+id/passwordID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberPassword"
-        android:text="@string/senha"
-        android:textSize="24sp"
+            <ImageView
+                android:id="@+id/imgLogoMarcaID"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_marca" />
+        </LinearLayout>
 
-        tools:ignore="LabelFor,TextFields"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/loginID"
-        android:layout_toEndOf="@+id/imgSenhaID" />
+        <EditText
+            android:id="@+id/loginID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/Login"
+            android:textSize="24sp"
+            tools:ignore="LabelFor" />
 
-    <Button
-        android:id="@+id/btnLogarID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/passwordID"
-        android:text="@string/acessar"
-        android:layout_alignEnd="@+id/passwordID"
-        android:layout_toEndOf="@+id/imgSenhaID" />
+        <EditText
+            android:id="@+id/passwordID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginID"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@+id/imgSenhaID"
+            android:ems="10"
 
-    <ImageView
-        android:id="@+id/imgLoginID"
-        android:layout_width="35dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/login_dois"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/passwordID"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="26dp" />
+            android:inputType="numberPassword"
+            android:text="@string/senha"
+            android:textSize="24sp"
+            tools:ignore="LabelFor,TextFields" />
 
-    <ImageView
-        android:id="@+id/imgSenhaID"
-        android:layout_width="35dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/passwordID"
-        android:layout_alignStart="@+id/imgLoginID"
-        app:srcCompat="@drawable/login_um"
-        tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/btnLogarID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/passwordID"
+            android:layout_below="@+id/passwordID"
+            android:layout_toEndOf="@+id/imgSenhaID"
+            android:text="@string/acessar" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imgLoginID"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/loginID"
+            android:layout_toStartOf="@+id/loginID"
+            app:srcCompat="@drawable/login_dois"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgSenhaID"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLogarID"
+            android:layout_toStartOf="@+id/loginID"
+            app:srcCompat="@drawable/login_um"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
