@@ -20,8 +20,12 @@ public class ActivityPrincipalCTB extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_ctb);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        /*butão flutuante caso precise deixei ele comentado
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -31,11 +35,12 @@ public class ActivityPrincipalCTB extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
+*/
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
+
+        drawer.addDrawerListener(toggle); // esse metodo estar ouvindo os eventos quando for abrir e fechar o item do menu inicial
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -43,7 +48,7 @@ public class ActivityPrincipalCTB extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed() {  // aqui estou chamando o menu do layaut inicial
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -81,7 +86,7 @@ public class ActivityPrincipalCTB extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_exemplomenu) {
-            // Handle the camera action
+            
         }
         /*os itens de menus caso precise já temos aqui
         } else if (id == R.id.nav_gallery) {
