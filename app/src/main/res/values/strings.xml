@@ -7,4 +7,10 @@
     <string name="solicitacao">Request</string>
     <string name="cadastrarPosto">Insert Gas Station</string>
     <string name="cadastrarCarro">Insert Car</string>
+    <string name="title_activity_principal_ctb">CTB ABASTECIMENTO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
