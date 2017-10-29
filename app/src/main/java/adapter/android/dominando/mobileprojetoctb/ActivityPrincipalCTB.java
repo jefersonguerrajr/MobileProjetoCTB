@@ -1,9 +1,8 @@
 package adapter.android.dominando.mobileprojetoctb;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,6 +14,9 @@ import android.view.MenuItem;
 
 public class ActivityPrincipalCTB extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private FragmentManager fragmentManager; // esse objeto será responsavel pelos fragmentos do meu activity
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,13 @@ public class ActivityPrincipalCTB extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fragmentManager = getSupportFragmentManager();// recuperando o objeto fragmente
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        //adcionando o fragmente ao meu activit
+        transaction.add(R.id.containerMaps, new MapsFragment(), "Mapsfragment");
+
+        transaction.commitAllowingStateLoss();
     }
 
     @Override
@@ -86,7 +95,7 @@ public class ActivityPrincipalCTB extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_exemplomenu) {
-            
+
         }
         /*os itens de menus caso precise já temos aqui
         } else if (id == R.id.nav_gallery) {
