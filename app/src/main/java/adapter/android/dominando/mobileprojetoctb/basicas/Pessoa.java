@@ -6,26 +6,24 @@ package adapter.android.dominando.mobileprojetoctb.basicas;
 
 public class Pessoa {
     private String nome;
-    private String endereco;
     private int cpf;
-    private String telefone;
-    private String tel_celular;
+    private String email;
     private String senha;
 
+    // Construtor
+    public Pessoa(String nome, int cpf, String email, String senha) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+    }
+    // M
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
     }
 
     public int getCpf() {
@@ -36,20 +34,12 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getTel_celular() {
-        return tel_celular;
-    }
-
-    public void setTel_celular(String tel_celular) {
-        this.tel_celular = tel_celular;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSenha() {
