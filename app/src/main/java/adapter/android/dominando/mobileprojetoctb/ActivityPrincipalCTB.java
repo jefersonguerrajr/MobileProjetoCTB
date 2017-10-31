@@ -94,9 +94,21 @@ public class ActivityPrincipalCTB extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_exemplomenu) {
+        switch (id)
+        {
+            case R.id.nav_exemplomenu:
+                
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+                //adcionando o fragmente ao meu activit
+                transaction.replace(R.id.containerMaps, new MapsFragment(), "Mapsfragment"); ///
 
+                transaction.commitAllowingStateLoss();
+
+                break;
+            case R.id.nav_exemploProvaiderV1:
+                break;
         }
+
         /*os itens de menus caso precise já temos aqui
         } else if (id == R.id.nav_gallery) {
 
