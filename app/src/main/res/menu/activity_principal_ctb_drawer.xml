@@ -7,22 +7,23 @@
         <item
             android:id="@+id/nav_exemplomenu"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="MENU" />
+            android:title="LocalizaçãoT" />
 
         <item
             android:id="@+id/nav_exemploProvaiderV1"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="provaider v1" />
-        <!--
+            android:title="provaiderTestando" />
+
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Login" />
+<!--
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
-            -->
+-->
     </group>
 <!--
     <item android:title="Communicate">
