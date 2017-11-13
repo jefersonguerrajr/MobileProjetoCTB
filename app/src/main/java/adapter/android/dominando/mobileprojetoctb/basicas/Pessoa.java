@@ -11,7 +11,7 @@ public class Pessoa {
     private String senha;
 
     // Construtor
-    public Pessoa(String nome, int cpf, String email, String senha) {
+    public Pessoa() {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;

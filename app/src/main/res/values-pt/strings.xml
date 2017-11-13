@@ -4,6 +4,11 @@
     <string name="Login">Usuario</string>
     <string name="senha">Senha</string>
     <string name="acessar">Acessar</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="login">Login</string>
+    <string name="salvar">Salvar</string>
+    <string name="email">E-mail</string>
     <string name="cadastroMotorista">Cadastro De Motorista</string>
     <string name="solicitacao">Solicitação</string>
     <string name="cadastrarPosto">Cadastrar posto de gasolina</string>
