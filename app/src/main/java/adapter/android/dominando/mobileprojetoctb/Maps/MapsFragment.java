@@ -1,12 +1,7 @@
-package adapter.android.dominando.mobileprojetoctb.basicas;
+package adapter.android.dominando.mobileprojetoctb.Maps;
 
-
-import android.content.Context;
-import android.location.Criteria;
-import android.location.LocationManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -16,13 +11,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.security.SignatureException;
+public class MapsFragment extends SupportMapFragment implements OnMapReadyCallback,GoogleMap.OnMapClickListener { //essa interfacer  OnMapReadyCallback //GoogleMap.OnMapClickListener ação
 
-public class ProvaiderFragmentV1 extends SupportMapFragment implements OnMapReadyCallback,GoogleMap.OnMapClickListener { //essa interfacer  OnMapReadyCallback //GoogleMap.OnMapClickListener ação
-
-    private static  final  String TAG = "ProvaiderFragmentV1";
     private GoogleMap mMap;
-    private LocationManager locationManager;  //objeto responsavel pro localizar o provaider para estar buscando nossa localização
 
 
     @Override
@@ -43,24 +34,10 @@ public class ProvaiderFragmentV1 extends SupportMapFragment implements OnMapRead
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
-        try{
-
-        locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
-
-        Criteria criteria = new Criteria();
-        String provider = locationManager.getBestProvider(criteria,true); ///// ajudar a buscar fazer pesquisa da localização
-
-            Toast.makeText(getActivity(),"provider: " + provider,Toast.LENGTH_LONG); //// Mensagem para exibir o nome do provider
-
         mMap = googleMap;
         mMap.setOnMapClickListener(this);
         mMap.getUiSettings().setZoomControlsEnabled(true);
-        mMap.setMyLocationEnabled(true); ///ativando o provaider o melhor provide do gps para localização
 
-        }catch (SecurityException ex){
-            Log.e(TAG,"ERRO",ex);
-        }
         //Cordenadas de Sidney
         LatLng sydney = new LatLng(-33.87365,151.20689);
         MarkerOptions marker = new MarkerOptions();

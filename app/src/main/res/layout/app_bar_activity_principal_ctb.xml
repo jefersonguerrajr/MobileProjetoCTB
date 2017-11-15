@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="adapter.android.dominando.mobileprojetoctb.ActivityPrincipalCTB">
+    tools:context="adapter.android.dominando.mobileprojetoctb.Maps.ActivityPrincipalCTB">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

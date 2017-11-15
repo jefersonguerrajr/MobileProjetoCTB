@@ -1,6 +1,7 @@
-package adapter.android.dominando.mobileprojetoctb;
+package adapter.android.dominando.mobileprojetoctb.Maps;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
@@ -11,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import adapter.android.dominando.mobileprojetoctb.R;
 
 public class ActivityPrincipalCTB extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,6 +91,15 @@ public class ActivityPrincipalCTB extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    private void showFragment(Fragment fragment,String name){
+
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        //adcionando o fragmente ao meu activit
+        transaction.replace(R.id.containerMaps, fragment,name); ///
+
+        transaction.commit();
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -97,15 +109,15 @@ public class ActivityPrincipalCTB extends AppCompatActivity
         switch (id)
         {
             case R.id.nav_exemplomenu:
-                
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                //adcionando o fragmente ao meu activit
-                transaction.replace(R.id.containerMaps, new MapsFragment(), "Mapsfragment"); ///
-
-                transaction.commitAllowingStateLoss();
+                showFragment(new MapsFragment(),"MapsFragment");
 
                 break;
             case R.id.nav_exemploProvaiderV1:
+                showFragment(new MapsFragment(),"ProvaiderV1MapsFragment");
+                break;
+
+            case R.id.nav_mapsGPS:
+                showFragment(new MapsFragment(),"MapsGPS");
                 break;
         }
 

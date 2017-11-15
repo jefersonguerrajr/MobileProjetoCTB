@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActivityPrincipalCTB"
+            android:name=".Maps.ActivityPrincipalCTB"
             android:label="@string/title_activity_principal_ctb"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -46,7 +46,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsFragment"
+            android:name=".Maps.MapsFragment"
             android:label="@string/title_activity_maps"></activity>
         <activity android:name=".CadastroPessoa"></activity>
     </application>

@@ -12,7 +12,13 @@
         <item
             android:id="@+id/nav_exemploProvaiderV1"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="provaiderTestando" />
+            android:title="Localicação" />
+
+        <item
+            android:id="@+id/nav_mapsGPS"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Localizaçao GPS" />
+
 
         <item
             android:id="@+id/nav_slideshow"
