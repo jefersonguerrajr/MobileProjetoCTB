@@ -28,6 +28,7 @@
                 app:srcCompat="@drawable/logo_marca" />
         </LinearLayout>
 
+
         <EditText
             android:id="@+id/loginID"
             android:layout_width="wrap_content"
@@ -36,8 +37,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:ems="10"
+            android:hint="Informe seu Login"
             android:inputType="textPersonName"
-            android:text="@string/Login"
             android:textSize="24sp"
             tools:ignore="LabelFor" />
 
@@ -47,11 +48,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/loginID"
             android:layout_centerHorizontal="true"
-
             android:layout_marginTop="34dp"
             android:ems="10"
             android:inputType="numberPassword"
-            android:text="@string/senha"
+            android:hint="*********"
             android:textSize="24sp"
             tools:ignore="LabelFor,TextFields" />
 
