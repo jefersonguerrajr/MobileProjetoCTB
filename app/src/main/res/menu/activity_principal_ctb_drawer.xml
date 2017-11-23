@@ -5,32 +5,64 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:title="Login" />
+
+
+        <item
+            android:id="@+id/nav_abastecimento"
+            android:icon="@drawable/ic_local_gas_station_black_24dp"
+            android:title="Abastecimento"/>
+
+        <item
+            android:id="@+id/nav_despesas"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Despesas"/>
+
+        <item
+            android:id="@+id/nav_calcularMelhorAbastecimento"
+            android:icon="@drawable/ic_exposure_black_24dp"
+            android:title="Calcular"/>
+
+        <item
+            android:id="@+id/nav_servicos"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Serviços"/>
+
+        <item
             android:id="@+id/nav_exemplomenu"
             android:icon="@drawable/ic_location_on_black_24dp"
-            android:title="LocalizaçãoT" />
+            android:title="Localização" />
 
+    </group>
+
+</menu>
+
+
+
+
+<!--- FAVOR NÃO EXCLUIR ESSE CODIGO
         <item
             android:id="@+id/nav_exemploProvaiderV1"
             android:icon="@drawable/ic_location_on_black_24dp"
             android:title="Localicação" />
-
+ //FAVOR NÃO EXCLUIR ESSE CODIGO
         <item
             android:id="@+id/nav_mapsGPS"
             android:icon="@drawable/ic_location_on_black_24dp"
             android:title="Localizaçao GPS" />
+-->
 
 
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Login" />
 <!--
+ FAVOR NÃO EXCLUIR ESSE CODIGO
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
 -->
-    </group>
+
 <!--
     <item android:title="Communicate">
         <menu>
@@ -46,4 +78,4 @@
     </item>
     -->
 
-</menu>
+

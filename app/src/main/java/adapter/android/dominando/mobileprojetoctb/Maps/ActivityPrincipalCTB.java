@@ -116,13 +116,13 @@ public class ActivityPrincipalCTB extends AppCompatActivity
                 showFragment(new MapsFragment(),"MapsFragment");
 
                 break;
-            case R.id.nav_exemploProvaiderV1:
-                showFragment(new MapsFragment(),"ProvaiderV1MapsFragment");
-                break;
+           // case R.id.nav_exemploProvaiderV1:
+              //  showFragment(new MapsFragment(),"ProvaiderV1MapsFragment");
+            //    break;
 
-            case R.id.nav_mapsGPS:
-                showFragment(new MapsFragment(),"MapsGPS");
-                break;
+         //   case R.id.nav_mapsGPS:
+             //   showFragment(new MapsFragment(),"MapsGPS");
+           //     break;
 
             case R.id.nav_slideshow:
 //// chamar uma Activity a partir de um item de um navigation drawer
