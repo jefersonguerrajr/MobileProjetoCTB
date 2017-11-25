@@ -124,7 +124,7 @@ public class ActivityPrincipalCTB extends AppCompatActivity
              //   showFragment(new MapsFragment(),"MapsGPS");
            //     break;
 
-            case R.id.nav_slideshow:
+            case R.id.logintelainicio:
 //// chamar uma Activity a partir de um item de um navigation drawer
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);

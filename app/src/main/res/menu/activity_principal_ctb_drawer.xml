@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/logintelainicio"
             android:icon="@drawable/ic_vpn_key_black_24dp"
             android:title="Login" />
 
