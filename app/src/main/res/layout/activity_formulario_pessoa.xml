@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="adapter.android.dominando.mobileprojetoctb.FormularioPessoaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Usuário"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="140dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtLayout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtEmailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seu Email"
+            android:inputType="textWebEmailAddress"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtLayout_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtSenhaID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sua senha"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/novo"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="@string/novo"
+        app:showAsAction="always" />
+
+    <item android:title="@string/sair"
+        android:id="@+id/sair"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        app:showAsAction="always" />
+</menu>

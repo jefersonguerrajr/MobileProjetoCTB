@@ -47,8 +47,8 @@
 
         <activity
             android:name=".Maps.MapsFragment"
-            android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".CadastroPessoa"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".FormularioPessoaActivity"></activity>
     </application>
 
 </manifest>

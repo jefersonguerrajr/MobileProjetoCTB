@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (itemClicado){
             case R.id.novo:
-                Intent novoAlunoFormulario = new Intent(this, CadastroPessoa.class);
+                Intent novoAlunoFormulario = new Intent(this, FormularioPessoaActivity.class);
                startActivity(novoAlunoFormulario);
                 break;
             case  R.id.sair:

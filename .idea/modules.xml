@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MobileProjetoCTB.iml" filepath="$PROJECT_DIR$/MobileProjetoCTB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobileCTB.iml" filepath="$PROJECT_DIR$/MobileCTB.iml" />
       <module fileurl="file://C:\Users\desenvolvimento\Desktop\Projeto CTB Android\MobileProjetoCTB\MobileProjetoCTB.iml" filepath="C:\Users\desenvolvimento\Desktop\Projeto CTB Android\MobileProjetoCTB\MobileProjetoCTB.iml" />
+      <module fileurl="file://C:\Users\cppde\AndroidStudioProjects\MobileCTB\MobileProjetoCTB.iml" filepath="C:\Users\cppde\AndroidStudioProjects\MobileCTB\MobileProjetoCTB.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
