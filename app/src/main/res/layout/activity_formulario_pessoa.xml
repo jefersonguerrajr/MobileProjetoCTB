@@ -10,10 +10,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Novo Usuário"
-        android:layout_marginTop="32dp"
+        android:layout_marginLeft="140dp"
         android:layout_marginRight="32dp"
-        android:layout_marginLeft="140dp"/>
+        android:layout_marginTop="32dp"
+        android:text="Novo Usuário"
+        android:textSize="18sp" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/txtLayout_email"
@@ -27,7 +28,7 @@
             android:id="@+id/edtEmailID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Seu Email"
+            android:hint="Email"
             android:inputType="textWebEmailAddress"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -38,14 +39,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginLeft="32dp">
+        android:layout_marginLeft="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true">
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/edtSenhaID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sua senha"
-            android:inputType="textPassword"/>
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:maxLength="8"/>
     </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnPolimorfiID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Salvar" />
 
 </LinearLayout>

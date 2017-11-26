@@ -5,33 +5,23 @@ package adapter.android.dominando.mobileprojetoctb.basicas;
  */
 
 public class Pessoa {
-    private String nome;
-    private int cpf;
+    private Long id;
     private String email;
     private String senha;
 
     // Construtor
     public Pessoa() {
-        this.nome = nome;
-        this.cpf = cpf;
+        this.id = id;
         this.email = email;
         this.senha = senha;
     }
-    // M
-    public String getNome() {
-        return nome;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getEmail() {
