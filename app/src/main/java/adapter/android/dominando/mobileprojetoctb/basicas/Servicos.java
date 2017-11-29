@@ -8,13 +8,18 @@ public class Servicos {
     Long id;
     String nomeEstabelecimento;
     String tipoServico;
-    double valorServico;
+    Double valorServico;
     String enderecoEstabelecimentodoServico;
     String telefoneEstabelecimentodoServico;
-    double avaliacaoEstavelecimentodoServico;
+    Double avaliacaoEstavelecimentodoServico;
+
+    @Override
+    public String toString() {
+        return nomeEstabelecimento;
+    }
 
     // Construtor
-    public Servicos() {
+   /* public Servicos() {
         this.id = id;
         this.nomeEstabelecimento = nomeEstabelecimento;
         this.tipoServico = tipoServico;
@@ -24,7 +29,7 @@ public class Servicos {
         this.avaliacaoEstavelecimentodoServico = avaliacaoEstavelecimentodoServico;
 
     }
-
+*/
     public Long getId() {
         return id;
     }
@@ -49,11 +54,11 @@ public class Servicos {
         this.tipoServico = tipoServico;
     }
 
-    public double getValorServico() {
+    public Double getValorServico() {
         return valorServico;
     }
 
-    public void setValorServico(double valorServico) {
+    public void setValorServico(Double valorServico) {
         this.valorServico = valorServico;
     }
 
@@ -73,11 +78,11 @@ public class Servicos {
         this.telefoneEstabelecimentodoServico = telefoneEstabelecimentodoServico;
     }
 
-    public double getAvaliacaoEstavelecimentodoServico() {
+    public Double getAvaliacaoEstavelecimentodoServico() {
         return avaliacaoEstavelecimentodoServico;
     }
 
-    public void setAvaliacaoEstavelecimentodoServico(double avaliacaoEstavelecimentodoServico) {
+    public void setAvaliacaoEstavelecimentodoServico(Double avaliacaoEstavelecimentodoServico) {
         this.avaliacaoEstavelecimentodoServico = avaliacaoEstavelecimentodoServico;
     }
 }

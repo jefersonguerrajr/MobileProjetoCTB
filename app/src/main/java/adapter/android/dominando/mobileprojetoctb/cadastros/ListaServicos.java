@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.List;
+
 import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
 import adapter.android.dominando.mobileprojetoctb.BDHelper.ServicoBd;
 import adapter.android.dominando.mobileprojetoctb.R;
@@ -19,35 +21,22 @@ import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 import adapter.android.dominando.mobileprojetoctb.basicas.Servicos;
 
 public class ListaServicos extends AppCompatActivity {
+    private  ListView listaservicos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_servicos);
-
-       final String[] listadosservicos = {"Oleo","Pintura","Lanternagem"};
-        int layaut = android.R.layout.simple_list_item_1;
-        final ArrayAdapter<String> adapter = new ArrayAdapter <String>(this, layaut,listadosservicos);
+        listaservicos = (ListView) findViewById(R.id.listaservicos);
 
 
-        ListView listaservicos = (ListView) findViewById(R.id.listaservicos);
 
-        listaservicos.setAdapter(adapter);
+
 
         listaservicos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ListaServicos.this, "Serviço"+listadosservicos[position], Toast.LENGTH_SHORT).show();
-            }
-        });
-        listaservicos.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Toast.makeText(ListaServicos.this, "Serviço de:"+adapter.getItemViewType(position), Toast.LENGTH_SHORT).show();
-                return false;
+                Toast.makeText(ListaServicos.this, "Serviço"+position, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -81,4 +70,18 @@ public class ListaServicos extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ServicoBd servicoBd = new ServicoBd(this);
+        List<Servicos>servicos = servicoBd.getListaServico();
+        servicoBd.close();
+
+        //final String[] listadosservicos = {"Oleo","Pintura","Lanternagem"};
+        int layaut = android.R.layout.simple_list_item_1;
+        ArrayAdapter<Servicos> adapter = new ArrayAdapter <Servicos>(this, layaut,servicos);
+        listaservicos.setAdapter(adapter);
+    }
 }
+

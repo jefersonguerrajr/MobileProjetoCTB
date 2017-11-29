@@ -29,9 +29,6 @@ public class FormularioServicos extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formcadastroservico);
         bdHelperServico = new FormularioHelpesServicos(this);
-
-
-
         Button botao =(Button) findViewById(R.id.salvarServicos);
 
         botao.setOnClickListener(new View.OnClickListener() {
