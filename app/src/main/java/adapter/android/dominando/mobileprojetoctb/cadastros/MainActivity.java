@@ -1,4 +1,4 @@
-package adapter.android.dominando.mobileprojetoctb;
+package adapter.android.dominando.mobileprojetoctb.cadastros;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+
+import adapter.android.dominando.mobileprojetoctb.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (itemClicado){
             case R.id.novo:
-                Intent novoAlunoFormulario = new Intent(this, FormularioPessoaActivity.class);
-               startActivity(novoAlunoFormulario);
+                Intent novoFormulario = new Intent(this, FormularioPessoaActivity.class);
+               startActivity(novoFormulario);
                 break;
             case  R.id.sair:
                 finish();

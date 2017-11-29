@@ -76,3 +76,20 @@ public class PessoasBd extends SQLiteOpenHelper {
         return pessoas;
     }
 }
+
+/*Passo para verificar o arquivo do banco de dados na maquina
+
+Faça os seguintes passos:
+
+No Android Studio, vá em Tools > Android > Device Monitor
+No Device Monitor, no canto esquerdo, selecione o dispositivo que está em execução
+Selecione a aba File Explorer do Device Monitor. Nesse momento irão aparecer as pastas
+que estão no dispositivo em execução
+Selecione data > data > pacote.da.sua.aplicação > databases
+Se você quiser baixar e visualizar o arquivo de banco de dados,
+basta selecionar o arquivo e clicar na opção Pull a file from device,
+que é um icone de um disquete com uma seta rosa que fica no canto superior
+direito, entre as abas e o explorador de arquivo
+
+
+ */

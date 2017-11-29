@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="adapter.android.dominando.mobileprojetoctb.AlterarPessoaActivity">
+    tools:context="adapter.android.dominando.mobileprojetoctb.cadastros.AlterarPessoaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

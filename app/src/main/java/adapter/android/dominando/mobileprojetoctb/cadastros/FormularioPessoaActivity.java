@@ -1,4 +1,4 @@
-package adapter.android.dominando.mobileprojetoctb;
+package adapter.android.dominando.mobileprojetoctb.cadastros;
 
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
+import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 
 public class FormularioPessoaActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package adapter.android.dominando.mobileprojetoctb;
+package adapter.android.dominando.mobileprojetoctb.cadastros;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
+import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 
 public class AlterarPessoaActivity extends AppCompatActivity {

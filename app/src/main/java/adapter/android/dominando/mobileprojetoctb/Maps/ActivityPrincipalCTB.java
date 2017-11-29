@@ -13,11 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import adapter.android.dominando.mobileprojetoctb.MainActivity;
+import adapter.android.dominando.mobileprojetoctb.cadastros.MainActivity;
 import adapter.android.dominando.mobileprojetoctb.R;
+import adapter.android.dominando.mobileprojetoctb.cadastros.ListaServicos;
 
 public class ActivityPrincipalCTB extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -129,6 +128,13 @@ public class ActivityPrincipalCTB extends AppCompatActivity
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                     break;
+
+
+            case R.id.nav_servicos:
+//// chamar uma Activity a partir de um item de um navigation drawer
+                Intent intentServicos = new Intent(this, ListaServicos.class);
+                startActivity(intentServicos);
+                break;
 
         }
 

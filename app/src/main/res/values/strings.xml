@@ -21,4 +21,5 @@
     <string name="novo">Novo</string>
     <string name="mapa">mapa</string>
     <string name="sair">sair</string>
+    <string name="nome_do_estabelecimento">Nome do Estabelecimento:</string>
 </resources>

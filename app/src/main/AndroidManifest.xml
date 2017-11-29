@@ -30,8 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GerenteActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".cadastros.GerenteActivity" />
+        <activity android:name=".cadastros.MainActivity" />
+        <activity android:name=".cadastros.FormularioServicos" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -48,8 +49,10 @@
         <activity
             android:name=".Maps.MapsFragment"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".FormularioPessoaActivity" />
-        <activity android:name=".AlterarPessoaActivity"></activity>
+        <activity android:name=".cadastros.FormularioPessoaActivity" />
+        <activity android:name=".cadastros.AlterarPessoaActivity" />
+        <activity android:name=".cadastros.ListaServicos">
+        </activity>
     </application>
 
 </manifest>
