@@ -1,11 +1,14 @@
 package adapter.android.dominando.mobileprojetoctb.basicas;
 
+import java.io.Serializable;
+
 /**
  * Created by cppde on 30/10/2017.
  */
 
-public class Veiculo {
+public class Veiculo implements Serializable {
 
+    private Long id;
     private String placa;
     private String fabricante;
     private String modelo;
@@ -18,10 +21,13 @@ public class Veiculo {
     private String apoliceDoSeguro;
     private String contatoSeguradora;
 
+    @Override
+    public String toString() {
+        return modelo.toString();
+    }
+
     //Construtor
-    public Veiculo(String placa, String fabricante, String modelo, String chassi,
-                   int anoDeFabricacao, int kilometragem, int capacidadeDoTanque,
-                   String nomeSeguradora, String apoliceDoSeguro, String contatoSeguradora) {
+    public Veiculo() {
         this.placa = placa;
         this.fabricante = fabricante;
         this.modelo = modelo;
@@ -36,6 +42,14 @@ public class Veiculo {
     // Métodos getters e Setters
     public String getPlaca() {
         return placa;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setPlaca(String placa) {

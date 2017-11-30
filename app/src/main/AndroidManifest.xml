@@ -51,8 +51,9 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".cadastros.FormularioPessoaActivity" />
         <activity android:name=".cadastros.AlterarPessoaActivity" />
-        <activity android:name=".cadastros.ListaServicos">
-        </activity>
+        <activity android:name=".cadastros.ListaServicos" />
+        <activity android:name=".cadastros.ListaVeiculosActivity" />
+        <activity android:name=".cadastros.FormularioVeiculoActivity"></activity>
     </application>
 
 </manifest>
