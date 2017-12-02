@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".cadastros.GerenteActivity" />
-        <activity android:name=".cadastros.MainActivity" />
+        <activity android:name=".cadastros.LoginActivity" />
         <activity android:name=".cadastros.FormularioServicos" />
 
         <!--
@@ -53,7 +53,8 @@
         <activity android:name=".cadastros.AlterarPessoaActivity" />
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
-        <activity android:name=".cadastros.FormularioVeiculoActivity"></activity>
+        <activity android:name=".cadastros.FormularioVeiculoActivity" />
+        <activity android:name=".SobreActivity"></activity>
     </application>
 
 </manifest>
