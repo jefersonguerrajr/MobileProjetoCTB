@@ -26,4 +26,21 @@
         android:layout_marginTop="21dp"
         android:text="Veiculo" />
 
+    <ImageView
+        android:id="@+id/imgPessoaID"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/imgVeiculoID"
+        android:layout_marginStart="75dp"
+        android:layout_toEndOf="@+id/imgVeiculoID"
+        app:srcCompat="@drawable/cadastro_motorista" />
+
+    <TextView
+        android:id="@+id/txtPessoaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVeiculoID"
+        android:layout_alignStart="@+id/imgPessoaID"
+        android:text="Pessoa" />
+
 </RelativeLayout>

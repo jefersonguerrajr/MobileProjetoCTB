@@ -15,10 +15,8 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
 import adapter.android.dominando.mobileprojetoctb.BDHelper.ServicoBd;
 import adapter.android.dominando.mobileprojetoctb.R;
-import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 import adapter.android.dominando.mobileprojetoctb.basicas.Servicos;
 
 public class ListaServicos extends AppCompatActivity {
