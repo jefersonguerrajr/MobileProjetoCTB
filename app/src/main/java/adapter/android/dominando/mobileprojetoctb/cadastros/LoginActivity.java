@@ -11,13 +11,13 @@ import android.view.View;
 import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.cadastros.Pessoa.FormularioPessoaActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
 
     private View.OnClickListener tratadorDoBotao = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent it = new Intent(MainActivity.this, GerenteActivity.class);
+            Intent it = new Intent(LoginActivity.this, GerenteActivity.class);
             startActivity(it);
         }
     };
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         findViewById(R.id.btnLogarID).setOnClickListener(tratadorDoBotao);
     }

@@ -49,12 +49,11 @@
         <activity
             android:name=".Maps.MapsFragment"
             android:label="@string/title_activity_maps" />
+        <activity android:name=".cadastros.FormularioPessoaActivity" />
+        <activity android:name=".cadastros.AlterarPessoaActivity" />
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
-        <activity android:name=".cadastros.FormularioVeiculoActivity" />
-        <activity android:name=".cadastros.Pessoa.ListaPessoaActivity" />
-        <activity android:name=".cadastros.Pessoa.ConsultarPessoaActivity" />
-        <activity android:name=".cadastros.Pessoa.FormularioPessoaActivity"></activity>
+        <activity android:name=".cadastros.FormularioVeiculoActivity"></activity>
     </application>
 
 </manifest>
