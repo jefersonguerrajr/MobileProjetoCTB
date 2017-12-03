@@ -40,4 +40,16 @@ public  class FormularioHelpesServicos {
 
         return servicos;
     }
+
+    public void colocarServico(Servicos servicosAlterar) {
+
+        editNomeEstabelecimento.setText(servicosAlterar.getNomeEstabelecimento());
+        tipoServico.setText(servicosAlterar.getTipoServico());
+
+        //Double.valueOf(servicosAlterar.getValorServico());
+        editEnderecoEstabelecimento.setText(servicosAlterar.getNomeEstabelecimento());
+        telefoneEstabelecimento.setText(servicosAlterar.getTelefoneEstabelecimentodoServico());
+        avaliacaoEstavelecimentodoServico.setRating(servicosAlterar.getAvaliacaoEstavelecimentodoServico().floatValue());
+
+    }
 }

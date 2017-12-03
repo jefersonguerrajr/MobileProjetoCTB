@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
 import adapter.android.dominando.mobileprojetoctb.BDHelper.ServicoBd;
@@ -28,15 +29,34 @@ public class FormularioServicos extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.formcadastroservico);
+        Intent intent = getIntent();
+
+        final Servicos servicosAlterar = (Servicos) intent.getSerializableExtra("servicoSelecionado");
+
+        Toast.makeText(this,"Servicos:"+servicosAlterar,Toast.LENGTH_SHORT).show();
         bdHelperServico = new FormularioHelpesServicos(this);
         Button botao =(Button) findViewById(R.id.salvarServicos);
+
+        if (servicosAlterar !=null){
+            botao.setText("Alterar Serviço");
+            bdHelperServico.colocarServico(servicosAlterar);
+        }
+
 
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Servicos servicos = bdHelperServico.pegarServicodoFormulario();
+
                 ServicoBd servicoBd = new ServicoBd(FormularioServicos.this);
-                servicoBd.salvarServico(servicos);
+                if (servicosAlterar==null){
+                    servicoBd.salvarServico(servicos);
+                }else {
+                    servicos.setId(servicosAlterar.getId());
+                    servicoBd.altera(servicos);
+                }
+
+
                 servicoBd.close();
                 finish();
 

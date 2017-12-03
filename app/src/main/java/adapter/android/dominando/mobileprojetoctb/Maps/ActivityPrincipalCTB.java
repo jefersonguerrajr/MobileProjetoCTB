@@ -14,8 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import adapter.android.dominando.mobileprojetoctb.SobreActivity;
-import adapter.android.dominando.mobileprojetoctb.cadastros.LoginActivity;
+import adapter.android.dominando.mobileprojetoctb.cadastros.MainActivity;
 import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.cadastros.ListaServicos;
 
@@ -92,11 +91,6 @@ public class ActivityPrincipalCTB extends AppCompatActivity
             return true;
         }
 
-        if (id == R.id.action_sobre){
-            Intent intentSobre = new Intent(this, SobreActivity.class);
-            startActivity(intentSobre);
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -121,23 +115,23 @@ public class ActivityPrincipalCTB extends AppCompatActivity
                 showFragment(new MapsFragment(),"MapsFragment");
 
                 break;
-            // case R.id.nav_exemploProvaiderV1:
-            //  showFragment(new MapsFragment(),"ProvaiderV1MapsFragment");
+           // case R.id.nav_exemploProvaiderV1:
+              //  showFragment(new MapsFragment(),"ProvaiderV1MapsFragment");
             //    break;
 
-            //   case R.id.nav_mapsGPS:
-            //   showFragment(new MapsFragment(),"MapsGPS");
-            //     break;
+         //   case R.id.nav_mapsGPS:
+             //   showFragment(new MapsFragment(),"MapsGPS");
+           //     break;
 
             case R.id.logintelainicio:
-                //// chamar uma Activity a partir de um item de um navigation drawer
-                Intent intent = new Intent(this, LoginActivity.class);
+//// chamar uma Activity a partir de um item de um navigation drawer
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
-                break;
+                    break;
 
 
             case R.id.nav_servicos:
-                //// chamar uma Activity a partir de um item de um navigation drawer
+//// chamar uma Activity a partir de um item de um navigation drawer
                 Intent intentServicos = new Intent(this, ListaServicos.class);
                 startActivity(intentServicos);
                 break;
