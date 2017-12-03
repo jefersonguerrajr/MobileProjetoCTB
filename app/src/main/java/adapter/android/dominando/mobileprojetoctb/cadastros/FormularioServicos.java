@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import adapter.android.dominando.mobileprojetoctb.BDHelper.PessoasBd;
+
 import adapter.android.dominando.mobileprojetoctb.BDHelper.ServicoBd;
 import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;

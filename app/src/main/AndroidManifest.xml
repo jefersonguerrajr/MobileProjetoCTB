@@ -33,6 +33,9 @@
         <activity android:name=".cadastros.GerenteActivity" />
         <activity android:name=".cadastros.MainActivity" />
         <activity android:name=".cadastros.FormularioServicos" />
+        <activity android:name=".cadastros.Pessoa.ListaPessoaActivity" />
+        <activity android:name=".cadastros.Pessoa.FormularioPessoaActivity" />
+        <activity android:name=".cadastros.Pessoa.ConsultarPessoaActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

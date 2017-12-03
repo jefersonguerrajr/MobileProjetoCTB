@@ -8,6 +8,9 @@
     <string name="cadastrarPosto">Insert Gas Station</string>
     <string name="cadastrarCarro">Insert Car</string>
     <string name="title_activity_principal_ctb">CTB ABASTECIMENTO</string>
+    <string name="titulo_incluindo">Incluindo Pessoa</string>
+    <string name="titulo_editando">Editando Pessoa</string>
+    <string name="obrigatorio">Campo Obrigatorio</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -22,4 +25,5 @@
     <string name="mapa">mapa</string>
     <string name="sair">sair</string>
     <string name="nome_do_estabelecimento">Nome do Estabelecimento:</string>
+    <string name="title_activity_lista_pessoa">ListaPessoaActivity</string>
 </resources>

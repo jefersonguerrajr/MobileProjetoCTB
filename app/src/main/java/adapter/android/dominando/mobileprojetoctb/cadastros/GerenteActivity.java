@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import adapter.android.dominando.mobileprojetoctb.R;
+import adapter.android.dominando.mobileprojetoctb.cadastros.Pessoa.ListaPessoaActivity;
 
 public class GerenteActivity extends AppCompatActivity {
     private ImageView btnPessoa;
@@ -17,11 +17,13 @@ public class GerenteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gerente);
 
-        btnPessoa = (ImageView) findViewById(R.id.imgVeiculoID);
+
+
+        btnPessoa = (ImageView) findViewById(R.id.imgPessoaID);
         btnPessoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GerenteActivity.this, ListaVeiculosActivity.class);
+                Intent intent = new Intent(GerenteActivity.this, ListaPessoaActivity.class);
                 startActivity(intent);
             }
         });
