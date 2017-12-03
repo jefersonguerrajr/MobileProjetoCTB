@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import adapter.android.dominando.mobileprojetoctb.R;
-import adapter.android.dominando.mobileprojetoctb.cadastros.Pessoa.FormularioPessoaActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
