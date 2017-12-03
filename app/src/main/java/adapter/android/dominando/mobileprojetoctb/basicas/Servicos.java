@@ -1,12 +1,10 @@
 package adapter.android.dominando.mobileprojetoctb.basicas;
 
-import java.io.Serializable;
-
 /**
  * Created by desenvolvimento on 28/11/2017.
  */
 
-public class Servicos implements Serializable{
+public class Servicos {
     Long id;
     String nomeEstabelecimento;
     String tipoServico;
