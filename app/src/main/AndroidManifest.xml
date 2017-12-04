@@ -58,7 +58,8 @@
         <activity android:name=".cadastros.ListaVeiculosActivity" />
         <activity android:name=".cadastros.FormularioVeiculoActivity" />
         <activity android:name=".config.help.HelpActivity" />
-        <activity android:name=".settings.help.HelpActivity"></activity>
+        <activity android:name=".settings.help.HelpActivity" />
+        <activity android:name=".cadastros.AposLogarActivity"></activity>
     </application>
 
 </manifest>

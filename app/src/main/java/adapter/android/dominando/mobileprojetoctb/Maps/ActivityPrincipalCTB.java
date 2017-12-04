@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import adapter.android.dominando.mobileprojetoctb.cadastros.AposLogarActivity;
 import adapter.android.dominando.mobileprojetoctb.cadastros.LoginActivity;
 import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.cadastros.ListaServicos;
@@ -88,7 +89,7 @@ public class ActivityPrincipalCTB extends AppCompatActivity
             return true;
         }
         if (id == R.id.action_help){
-            Intent helpIntent = new Intent(this, HelpActivity.class);
+            Intent helpIntent = new Intent(this, AposLogarActivity.class);
             startActivity(helpIntent);
             return true;
         }

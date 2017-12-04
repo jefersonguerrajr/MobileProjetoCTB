@@ -189,4 +189,16 @@ public class Pessoa implements Serializable {
        }
 
    }
+    /**
+   public String validadorLogin(String email, String senha){
+       DbHelper dbHelper = null;
+       SQLiteDatabase db;
+       db = dbHelper.getReadableDatabase();
+
+       Cursor c = db.rawQuery("SELECT * FROM Pessoas WHERE Email=? AND Senha=?", new String[email, senha]);
+       if(c.getCount()>0){
+           return "OK";
+       }
+       return "ERRO";
+   } **/
 }

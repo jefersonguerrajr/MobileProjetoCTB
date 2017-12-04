@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        findViewById(R.id.btnLogarID).setOnClickListener(tratadorDoBotao);
+        findViewById(R.id.btnAcessarID).setOnClickListener(tratadorDoBotao);
     }
 
     @Override

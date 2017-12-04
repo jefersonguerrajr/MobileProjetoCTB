@@ -14,6 +14,8 @@ public class DbHelper extends SQLiteOpenHelper {
     private static  final String TABELA_PESSOA = "CREATE TABLE Pessoas(ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
                                                 "Nome TEXT NOT NULL, Email TEXT NOT NULL, Senha TEXT NOT NULL);";
 
+    private static final String TABELA_LOGIN = "CREATE TABLE Utilizador(username TEXT PRIMARY KEY, password TEXT);";
+
     public DbHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -22,6 +24,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(TABELA_PESSOA);
+       // db.execSQL(TABELA_LOGIN);
     }
 
     @Override
