@@ -13,4 +13,5 @@
         android:orderInCategory="100"
         android:icon="@drawable/ic_cancel_black_24dp"
         app:showAsAction="always" />
+
 </menu>

@@ -17,4 +17,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="titulo">titulo</style>
+
+    <style name="detalhes">detalhes</style>
+
 </resources>

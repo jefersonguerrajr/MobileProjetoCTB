@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00A8EC">
+
+            <TextView
+                android:id="@+id/detalhes_servico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Serviço"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/detalhes_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Data"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/detalhes_prova_topicos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/titulo"
+        android:gravity="center_horizontal"
+        android:text="@string/destalhes_relatorio" />
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/detalhes"
+            android:text="@string/descricao" />
+
+        <TextView
+            android:id="@+id/detalhesdoRelarotio"
+            style="@style/detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <ListView
+        android:id="@+id/detalhes_prova_topicos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+-->
+
+</TableLayout>

@@ -20,12 +20,12 @@ public  class FormularioHelpesServicos {
 
     public FormularioHelpesServicos(FormularioServicos formularioServicos) {
 
-         editNomeEstabelecimento = (EditText) formularioServicos.findViewById(R.id.edText_NomeEstabelecimento);
-         tipoServico = (EditText) formularioServicos.findViewById(R.id.edText2_tipoServico);
-         valorServico = (EditText) formularioServicos.findViewById(R.id.editTValorServico);
+        editNomeEstabelecimento = (EditText) formularioServicos.findViewById(R.id.edText_NomeEstabelecimento);
+        tipoServico = (EditText) formularioServicos.findViewById(R.id.edText2_tipoServico);
+        valorServico = (EditText) formularioServicos.findViewById(R.id.editTValorServico);
         editEnderecoEstabelecimento = (EditText) formularioServicos.findViewById(R.id.editTextEndereco);
-         telefoneEstabelecimento = (EditText) formularioServicos.findViewById(R.id.editTextTelefone);
-         avaliacaoEstavelecimentodoServico = (RatingBar) formularioServicos.findViewById(R.id.ratingBarAvaliacaoServico);
+        telefoneEstabelecimento = (EditText) formularioServicos.findViewById(R.id.editTextTelefone);
+        avaliacaoEstavelecimentodoServico = (RatingBar) formularioServicos.findViewById(R.id.ratingBarAvaliacaoServico);
     }
 
     public Servicos pegarServicodoFormulario() {

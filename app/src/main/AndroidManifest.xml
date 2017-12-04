@@ -31,11 +31,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".cadastros.GerenteActivity" />
-        <activity android:name=".cadastros.LoginActivity" />
+        <activity android:name=".cadastros.MainActivity" />
         <activity android:name=".cadastros.FormularioServicos" />
-        <activity android:name=".cadastros.Pessoa.ListaPessoaActivity" />
-        <activity android:name=".cadastros.Pessoa.FormularioPessoaActivity" />
-        <activity android:name=".cadastros.Pessoa.ConsultarPessoaActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -47,7 +44,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBdE5AO9zz6ryS6-ojmGVARXzKP6oVJgG8" />
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".Maps.MapsFragment"
@@ -57,9 +54,8 @@
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
         <activity android:name=".cadastros.FormularioVeiculoActivity" />
-        <activity android:name=".config.help.HelpActivity" />
-        <activity android:name=".settings.help.HelpActivity" />
-        <activity android:name=".cadastros.AposLogarActivity"></activity>
+        <activity android:name=".cadastros.Relatorios">
+        </activity>
     </application>
 
 </manifest>

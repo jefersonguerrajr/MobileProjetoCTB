@@ -11,18 +11,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.List;
 
 import adapter.android.dominando.mobileprojetoctb.BDHelper.ServicoBd;
 import adapter.android.dominando.mobileprojetoctb.R;
-import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 import adapter.android.dominando.mobileprojetoctb.basicas.Servicos;
 
 public class ListaServicos extends AppCompatActivity {
     private  ListView listaservicos;
-private  Servicos servico;
+    private  Servicos servico;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,12 +31,12 @@ private  Servicos servico;
         listaservicos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
-             //   Toast.makeText(ListaServicos.this, "Serviço"+position, Toast.LENGTH_SHORT).show();
+                //   Toast.makeText(ListaServicos.this, "Serviço"+position, Toast.LENGTH_SHORT).show();
 
                 Servicos servicosClicado =  (Servicos) adapter.getItemAtPosition(position);
-           Intent intentParaFormularioDeAlterar = new Intent(ListaServicos.this,FormularioServicos.class);
-           intentParaFormularioDeAlterar.putExtra("servicoSelecionado",servicosClicado);
-            startActivity(intentParaFormularioDeAlterar);
+                Intent intentParaFormularioDeAlterar = new Intent(ListaServicos.this,FormularioServicos.class);
+                intentParaFormularioDeAlterar.putExtra("servicoSelecionado",servicosClicado);
+                startActivity(intentParaFormularioDeAlterar);
             }
         });
 
@@ -85,11 +83,14 @@ private  Servicos servico;
                 Intent novoFormulario = new Intent(this, FormularioServicos.class);
                 startActivity(novoFormulario);
                 break;
+            //case  R.id.sair:
+            //  finish();
+            //break;
             case  R.id.sair:
-                finish();
-                break;
+                Intent irpararelatorio = new Intent(this, Relatorios.class);
+                startActivity(irpararelatorio);
 
-            default:
+                //default:
                 break;
 
         }
