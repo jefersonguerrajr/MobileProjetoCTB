@@ -21,6 +21,7 @@
     <string name="excluir">Delete</string>
     <string name="cancelar">Cancel</string>
     <string name="fechar">Close</string>
+    <string name="acessar">Access</string>
 
 
     <string name="cadastroMotorista">Insert Driver</string>
