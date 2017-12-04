@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adapter.android.dominando.mobileprojetoctb.fragment.TutorialFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/txtDica1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1* Para inserir um novo usuário clique no botão cadastrar na tela do menu.\n
+2* Para consultar um usuário clique em consultar na tela de consulta. \n
+3* para Excluir um usuário acesse a tela de consulta, selecione um  usuário e clique em excluir."
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+</FrameLayout>

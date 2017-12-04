@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import adapter.android.dominando.mobileprojetoctb.fragment.PessoasFragment;
-import adapter.android.dominando.mobileprojetoctb.fragment.VeiculoFragment;
+import adapter.android.dominando.mobileprojetoctb.fragment.TutorialFragment;
+import adapter.android.dominando.mobileprojetoctb.fragment.SobreFragment;
 
 /**
  * Created by cppde on 04/12/2017.
@@ -25,10 +25,10 @@ private String[] tituloAbas = {"TUTORIAL", "SOBRE"};
 
         switch (position){
             case 0:
-                fragment = new PessoasFragment();
+                fragment = new TutorialFragment();
                 break;
             case 1:
-                fragment = new VeiculoFragment();
+                fragment = new SobreFragment();
                 break;
         }
         return fragment;

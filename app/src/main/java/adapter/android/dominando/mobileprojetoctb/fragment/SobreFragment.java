@@ -12,7 +12,7 @@ import adapter.android.dominando.mobileprojetoctb.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VeiculoFragment extends Fragment {
+public class SobreFragment extends Fragment {
 
 
 
@@ -20,7 +20,7 @@ public class VeiculoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_veiculo, container, false);
+        return inflater.inflate(R.layout.fragment_sobre, container, false);
     }
 
 }
