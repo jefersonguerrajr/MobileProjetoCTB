@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/background_light"
-        tools:context="adapter.android.dominando.mobileprojetoctb.cadastros.MainActivity">
+        tools:context="adapter.android.dominando.mobileprojetoctb.cadastros.LoginActivity">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -70,9 +70,8 @@
             android:id="@+id/btnLogarID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/txtLayout_password"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="39dp"
             android:text="@string/acessar" />
 
         <ImageView
