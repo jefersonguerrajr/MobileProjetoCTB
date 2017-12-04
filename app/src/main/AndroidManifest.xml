@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".cadastros.GerenteActivity" />
-        <activity android:name=".cadastros.MainActivity" />
+        <activity android:name=".cadastros.LoginActivity" />
         <activity android:name=".cadastros.FormularioServicos" />
         <activity android:name=".cadastros.Pessoa.ListaPessoaActivity" />
         <activity android:name=".cadastros.Pessoa.FormularioPessoaActivity" />
@@ -47,7 +47,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyBdE5AO9zz6ryS6-ojmGVARXzKP6oVJgG8" />
 
         <activity
             android:name=".Maps.MapsFragment"
@@ -57,6 +57,8 @@
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
         <activity android:name=".cadastros.FormularioVeiculoActivity" />
+        <activity android:name=".config.help.HelpActivity" />
+        <activity android:name=".settings.help.HelpActivity"></activity>
     </application>
 
 </manifest>

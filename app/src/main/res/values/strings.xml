@@ -46,4 +46,5 @@
     <string name="sair">sair</string>
     <string name="nome_do_estabelecimento">Nome do Estabelecimento:</string>
     <string name="title_activity_lista_pessoa">ListaPessoaActivity</string>
+    <string name="help">help</string>
 </resources>

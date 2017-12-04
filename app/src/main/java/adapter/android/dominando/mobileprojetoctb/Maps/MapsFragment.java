@@ -1,6 +1,5 @@
 package adapter.android.dominando.mobileprojetoctb.Maps;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -11,17 +10,15 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsFragment extends SupportMapFragment implements OnMapReadyCallback,GoogleMap.OnMapClickListener { //essa interfacer  OnMapReadyCallback //GoogleMap.OnMapClickListener ação
+public class MapsFragment extends SupportMapFragment implements OnMapReadyCallback,GoogleMap.OnMapClickListener {
 
     private GoogleMap mMap;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getMapAsync(this);
     }
-
 
     /**
      * Manipulates the map once available.
@@ -37,20 +34,17 @@ public class MapsFragment extends SupportMapFragment implements OnMapReadyCallba
         mMap = googleMap;
         mMap.setOnMapClickListener(this);
         mMap.getUiSettings().setZoomControlsEnabled(true);
-
-        //Cordenadas de Sidney
-        LatLng sydney = new LatLng(-33.87365,151.20689);
+        LatLng unibratec = new LatLng(-8.151798, -34.919792);
         MarkerOptions marker = new MarkerOptions();
-        marker.position(sydney);
-        marker.title("Marker in Sidney");
-
+        marker.position(unibratec);
+        marker.title("Marker in Unibratec");
         mMap.addMarker(marker);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(unibratec));
     }
 
     @Override
     public void onMapClick(LatLng latLng) {
-///evento de click no mapa
+        //evento de click no mapa
         Toast.makeText(getContext(),"Cordenada:" + latLng.toString(),Toast.LENGTH_SHORT).show();
     }
 }
