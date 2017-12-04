@@ -13,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:text="Cadastrar" />
+        android:text="@string/cadastrar" />
 
     <ListView
         android:id="@+id/listviewVeiculoID"

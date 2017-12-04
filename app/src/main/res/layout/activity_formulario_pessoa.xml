@@ -14,7 +14,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginEnd="4dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -39,7 +39,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtEmailPessoa" />
@@ -51,7 +51,7 @@
         android:layout_marginEnd="26dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="14dp"
-        android:text="Salvar"
+        android:text="@string/salvar"
         app:layout_constraintEnd_toStartOf="@+id/btnExcluirPessoa"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhaPessoa" />
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginTop="14dp"
-        android:text="Excluir"
+        android:text="@string/excluir"
         app:layout_constraintEnd_toStartOf="@+id/btnCancelarPessoa"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhaPessoa" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="29dp"
         android:layout_marginTop="14dp"
-        android:text="Cancelar"
+        android:text="@string/cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtSenhaPessoa" />
 </android.support.constraint.ConstraintLayout>

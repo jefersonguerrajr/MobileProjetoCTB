@@ -56,7 +56,7 @@
         <activity android:name=".cadastros.AlterarPessoaActivity" />
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
-        <activity android:name=".cadastros.FormularioVeiculoActivity"></activity>
+        <activity android:name=".cadastros.FormularioVeiculoActivity" />
     </application>
 
 </manifest>

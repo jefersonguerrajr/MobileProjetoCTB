@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MobileProjetoCTB</string>
-    <string name="Login">Usuario</string>
+    <string name="Login">Logar</string>
     <string name="senha">Senha</string>
-    <string name="acessar">Acessar</string>
+    <string name="Acessar">Acessar</string>
+    <string name="ControleAbastecimento">Controle de Abastecimento</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastrarPessoa">Cadastrar Pessoa</string>
+    <string name="consultarPessoa">Consultar Pessoa</string>
+    <string name="veiculo">Veículo</string>
+    <string name="pessoa">Pessoa</string>
+    <string name="modelo">Modelo</string>
+    <string name="fabricante">Fabricante</string>
+    <string name="placa">Placa do veículo</string>
+    <string name="chassi">Chassi</string>
+    <string name="quilometragem">Quilometragem</string>
+    <string name="modificar">Modificar</string>
     <string name="nome">Nome</string>
-    <string name="cpf">CPF</string>
-    <string name="login">Login</string>
-    <string name="salvar">Salvar</string>
     <string name="email">E-mail</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Deletar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fechar">Fechar</string>
+
+
+    <string name="cpf">CPF</string>
     <string name="cadastroMotorista">Cadastro De Motorista</string>
     <string name="solicitacao">Solicitação</string>
     <string name="cadastrarPosto">Cadastrar posto de gasolina</string>

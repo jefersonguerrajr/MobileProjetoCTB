@@ -24,7 +24,7 @@
         android:layout_below="@+id/imgVeiculoID"
         android:layout_marginStart="25dp"
         android:layout_marginTop="21dp"
-        android:text="Veiculo" />
+        android:text="@string/veiculo" />
 
     <ImageView
         android:id="@+id/imgPessoaID"
@@ -41,6 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/txtVeiculoID"
         android:layout_alignStart="@+id/imgPessoaID"
-        android:text="Pessoa" />
+        android:text="@string/pessoa" />
 
 </RelativeLayout>

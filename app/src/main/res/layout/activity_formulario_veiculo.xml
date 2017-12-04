@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Modelo"
+            android:hint="@string/modelo"
             android:inputType="textPersonName" />
 
         <EditText
@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Fabricante"
+            android:hint="@string/fabricante"
             android:inputType="textPersonName" />
 
         <EditText
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Placa"
+            android:hint="@string/placa"
             android:inputType="textPersonName" />
 
         <EditText
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Chassi"
+            android:hint="@string/chassi"
             android:inputType="textPersonName" />
 
         <EditText
@@ -48,14 +48,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Kilometragem"
+            android:hint="@string/quilometragem"
             android:inputType="number" />
 
         <Button
             android:id="@+id/btnPolimorfVeiculo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modificar" />
+            android:text="@string/modificar" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

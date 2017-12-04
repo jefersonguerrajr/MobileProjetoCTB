@@ -40,7 +40,7 @@
                 android:id="@+id/loginID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Login"
+                android:hint="@string/Login"
                 android:inputType="textWebEmailAddress" />
 
         </android.support.design.widget.TextInputLayout>
@@ -60,7 +60,7 @@
                 android:id="@+id/passwordID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Senha"
+                android:hint="@string/senha"
                 android:inputType="textPassword"
                 android:maxLength="8" />
         </android.support.design.widget.TextInputLayout>
@@ -73,7 +73,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="39dp"
-            android:text="@string/acessar" />
+            android:text="@string/Acessar" />
 
         <ImageView
             android:id="@+id/imgLoginID"
