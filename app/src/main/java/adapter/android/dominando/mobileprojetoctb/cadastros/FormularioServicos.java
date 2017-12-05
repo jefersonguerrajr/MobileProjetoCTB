@@ -15,14 +15,13 @@ import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 import adapter.android.dominando.mobileprojetoctb.basicas.Servicos;
 
 /**
- * Created by desenvolvimento on 28/11/2017.
+ * Created by Renato on 28/11/2017.
  */
 
 public class FormularioServicos extends Activity {
 
     Servicos editarServico, servico;
     private FormularioHelpesServicos bdHelperServico;
-
 
 
     @Override
@@ -42,7 +41,6 @@ public class FormularioServicos extends Activity {
             bdHelperServico.colocarServico(servicosAlterar);
         }
 
-
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,30 +53,9 @@ public class FormularioServicos extends Activity {
                     servicos.setId(servicosAlterar.getId());
                     servicoBd.altera(servicos);
                 }
-
-
                 servicoBd.close();
                 finish();
-
-
-
             }
         });
-
-
-        //
-
-        //
-        //
-
-
-
-
-
-
-
-
-
-
     }
 }

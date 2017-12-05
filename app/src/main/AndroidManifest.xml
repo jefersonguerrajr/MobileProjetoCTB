@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="adapter.android.dominando.mobileprojetoctb">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -30,9 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cadastros.GerenteActivity" />
-        <activity android:name=".cadastros.MainActivity" />
-        <activity android:name=".cadastros.FormularioServicos" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -42,20 +38,20 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".Maps.MapsFragment"
-            android:label="@string/title_activity_maps" />
-        <activity android:name=".cadastros.FormularioPessoaActivity" />
-        <activity android:name=".cadastros.AlterarPessoaActivity" />
+        <activity android:name=".Maps.MapsFragment" android:label="@string/title_activity_maps" />
+        <activity android:name=".cadastros.GerenteActivity" />
+        <activity android:name=".cadastros.FormularioServicos" />
         <activity android:name=".cadastros.ListaServicos" />
         <activity android:name=".cadastros.ListaVeiculosActivity" />
         <activity android:name=".cadastros.FormularioVeiculoActivity" />
-        <activity android:name=".cadastros.Relatorios">
-        </activity>
+        <activity android:name=".cadastros.Relatorios"/>
+        <activity android:name=".cadastros.LoginActivity"/>
+        <activity android:name=".cadastros.Pessoa.ConsultarPessoaActivity"/>
+        <activity android:name=".cadastros.Pessoa.FormularioPessoaActivity"/>
+        <activity android:name=".cadastros.Pessoa.ListaPessoaActivity"/>
+
     </application>
 
 </manifest>
