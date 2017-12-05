@@ -189,7 +189,29 @@ public class Pessoa implements Serializable {
        }
 
    }
+
     /**
+     *
+     * verifica os dados login
+     *
+     * @param usuario
+     * @param senha
+     * @return
+     */
+
+   public boolean validadorLogin(String usuario, String senha){
+       ArrayList<Pessoa> pessoas = new ArrayList();
+       pessoas = getPessoas();
+       for (int i = 0; i < pessoas.size(); i++){
+           if(pessoas.get(i).getEmailPessoa().equals(usuario)){
+               if (pessoas.get(i).getSenhaPessoa().equals(senha))
+                   return true;
+           }
+       }
+       return false;
+   }
+
+   /**
    public String validadorLogin(String email, String senha){
        DbHelper dbHelper = null;
        SQLiteDatabase db;

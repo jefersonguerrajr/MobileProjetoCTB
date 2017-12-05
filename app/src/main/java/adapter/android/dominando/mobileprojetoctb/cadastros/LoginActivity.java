@@ -7,18 +7,32 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import adapter.android.dominando.mobileprojetoctb.R;
+import adapter.android.dominando.mobileprojetoctb.basicas.Pessoa;
 import adapter.android.dominando.mobileprojetoctb.cadastros.Pessoa.FormularioPessoaActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public final Pessoa pessoa = new Pessoa(this);
 
     private View.OnClickListener tratadorDoBotao = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent it = new Intent(LoginActivity.this, GerenteActivity.class);
-            startActivity(it);
+            EditText editText = (EditText) findViewById(R.id.loginID);
+            String usuario, senha;
+            usuario = editText.getText().toString();
+            editText = (EditText) findViewById(R.id.passwordID);
+            senha = editText.getText().toString();
+            if(pessoa.validadorLogin(usuario,senha)) {
+                Toast.makeText(getApplicationContext(), "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(LoginActivity.this, GerenteActivity.class);
+                startActivity(it);
+            }else{
+                Toast.makeText(getApplicationContext(), "Falha no login, verifique os dados cadastrados", Toast.LENGTH_SHORT).show();
+            }
         }
     };
 

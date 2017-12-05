@@ -1,9 +1,5 @@
 <resources>
 
-
-    <string name="app_name">MobileProjetoCTB</string>
-    <string name="Login">Login</string>
-    <string name="senha">Password</string>
     <string name="acessar">Access</string>
     <string name="cadastroMotorista">Insert Driver</string>
     <string name="solicitacao">Request</string>
@@ -31,4 +27,36 @@
     <string name="titulo_incluindo">titulo_incluindo</string>
     <string name="obrigatorio">obrigatorio</string>
     <string name="btFragment">btFragment</string>
+
+
+
+    <string name="app_name">MobileProjectCTB</string>
+    <string name="Login">Login</string>
+    <string name="senha">Password</string>
+    <string name="Acessar">Access</string>
+    <string name="ControleAbastecimento">Supply Control</string>
+    <string name="cadastrar">Register</string>
+    <string name="cadastrarPessoa">Register People</string>
+    <string name="consultarPessoa">View People</string>
+    <string name="veiculo">Vehicle</string>
+    <string name="pessoa">People</string>
+    <string name="modelo">Model</string>
+    <string name="fabricante">Manufacturer</string>
+    <string name="placa">Vehicle plate</string>
+    <string name="chassi">Chassis</string>
+    <string name="quilometragem">Mileage</string>
+    <string name="modificar">Modify</string>
+    <string name="nome">Name</string>
+    <string name="email">Email</string>
+    <string name="salvar">Save</string>
+    <string name="excluir">Delete</string>
+    <string name="cancelar">Cancel</string>
+    <string name="fechar">Close</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="title_activity_lista_pessoa">ListaPessoaActivity</string>
+
 </resources>
