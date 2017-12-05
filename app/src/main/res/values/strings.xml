@@ -30,4 +30,5 @@
     <string name="titulo_editando">titulo_editando</string>
     <string name="titulo_incluindo">titulo_incluindo</string>
     <string name="obrigatorio">obrigatorio</string>
+    <string name="btFragment">btFragment</string>
 </resources>

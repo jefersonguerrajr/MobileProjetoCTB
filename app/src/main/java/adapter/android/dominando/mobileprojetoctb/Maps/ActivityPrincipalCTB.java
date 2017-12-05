@@ -18,6 +18,7 @@ import adapter.android.dominando.mobileprojetoctb.cadastros.AposLogarActivity;
 import adapter.android.dominando.mobileprojetoctb.cadastros.LoginActivity;
 import adapter.android.dominando.mobileprojetoctb.R;
 import adapter.android.dominando.mobileprojetoctb.cadastros.ListaServicos;
+import adapter.android.dominando.mobileprojetoctb.cadastros.Pessoa.JsonActivity;
 import adapter.android.dominando.mobileprojetoctb.settings.help.HelpActivity;
 
 public class ActivityPrincipalCTB extends AppCompatActivity
@@ -137,6 +138,13 @@ public class ActivityPrincipalCTB extends AppCompatActivity
 //// chamar uma Activity a partir de um item de um navigation drawer
                 Intent intentServicos = new Intent(this, ListaServicos.class);
                 startActivity(intentServicos);
+                break;
+
+
+            case R.id.nav_contato:
+//// chamar uma Activity a partir de um item de um navigation drawer
+                Intent intentJson = new Intent(this, JsonActivity.class);
+                startActivity(intentJson);
                 break;
 
         }

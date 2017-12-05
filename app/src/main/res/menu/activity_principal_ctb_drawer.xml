@@ -26,6 +26,12 @@
             android:title="Calcular"/>
 
         <item
+            android:id="@+id/nav_contato"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="Contato Officina"/>
+
+
+        <item
             android:id="@+id/nav_servicos"
             android:icon="@drawable/ic_build_black_24dp"
             android:title="Serviços"/>
@@ -34,6 +40,7 @@
             android:id="@+id/nav_exemplomenu"
             android:icon="@drawable/ic_location_on_black_24dp"
             android:title="Localização" />
+
 
     </group>
 

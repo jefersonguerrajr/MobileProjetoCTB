@@ -37,7 +37,7 @@ public class FormularioServicos extends Activity {
         Button botao =(Button) findViewById(R.id.salvarServicos);
 
         if (servicosAlterar !=null){
-            botao.setText("Alterar Serviço");
+            //botao.setText("Alterar Serviço");
             bdHelperServico.colocarServico(servicosAlterar);
         }
 

@@ -8,6 +8,13 @@
         android:title="@string/novo"
         app:showAsAction="always" />
 
+    <item
+        android:id="@+id/btFragment"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="@string/btFragment"
+        app:showAsAction="always" />
+
     <item android:title="@string/sair"
         android:id="@+id/sair"
         android:orderInCategory="100"

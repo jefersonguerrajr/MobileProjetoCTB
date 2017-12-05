@@ -83,15 +83,15 @@ public class ListaServicos extends AppCompatActivity {
                 Intent novoFormulario = new Intent(this, FormularioServicos.class);
                 startActivity(novoFormulario);
                 break;
-            //case  R.id.sair:
-            //  finish();
-            //break;
-            case  R.id.sair:
+            case  R.id.btFragment:
                 Intent irpararelatorio = new Intent(this, Relatorios.class);
                 startActivity(irpararelatorio);
-
                 //default:
                 break;
+
+            case  R.id.sair:
+              finish();
+            break;
 
         }
         return super.onOptionsItemSelected(item);
